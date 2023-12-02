@@ -10,8 +10,10 @@
   </p>
 
   <p>
+    <% if idea.picture? %>
     <strong>Picture:</strong>
-    <%= idea.picture %>
+    <%= image_tag(idea.picture_url, width: 600)  %>
+    <%# <img src="<%= idea.picture %>
+    <%end%>
   </p>
-
 </div>
